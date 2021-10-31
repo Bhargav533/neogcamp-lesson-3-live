@@ -5,9 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Component Library</title>
+    <!-- CSS way 1:Style tag 
+      <style>
+      body {
+        color: red;
+      }
+    </style> -->
+    <!-- CSS way 3 : External Link -->
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Welcome to Bhargav's Component library</h1>
+    <!-- CSS way 2 : Style tag -->
+    <!-- <h1 style="color: red">Welcome to Bhargav's Component library</h1> -->
+    <h1 id="lib-header">Welcome to Bhargav's Component library</h1>
     <p>
       I am attending neog.camp and i want a library which would make all my
       projects look good and consistent.
@@ -15,17 +25,17 @@
     <hr />
     <h1>This is the biggest heading</h1>
     <h2>This is the second biggest</h2>
-    <p>
+    <p class="para">
       Let me show you a normal text.This is a free flowing and will wrap at the
       end like a paragraph.
     </p>
-    <small>This is a relagtively smaller text</small>
+    <small class="para">This is a relagtively smaller text</small>
     <h2>@container</h2>
     <div>
       This is a centered container and it will go till the end of the page
     </div>
     <h3>center container</h3>
-    <div>
+    <div class="para">
       This is a centered container and it will go till the specified width
     </div>
     <h2>@links</h2>
@@ -67,7 +77,7 @@
       </ul>
     </nav>
     <hr />
-    <h2>Header</h2>
+    <h2>@Header</h2>
     <header>
       <img src="images/Header-hero.svg" alt="" />
       <h1>Heading inside header/hero</h1>
